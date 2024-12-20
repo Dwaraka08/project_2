@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 
 #load the model
-diabates_model=tf.keras.models.load_model("F:/dia_prediction.h5")
+diabates_model=tf.keras.models.load_model("dia_prediction.h5")
 
 #Title of the project 
 st.title("Diabates Predition")
@@ -20,7 +20,7 @@ with col1:
     age=st.text_input("Enter your age")
 
 with col2:
-    st.image(r"F:\Heart_1.png")
+    st.image("Heart_1.png")
 if st.button("prediction"):
     data=[[pregnanacies,Glucose,Bp,skin_th,Insulin,bmi,dpf,age]]
     #data_filtered = [x for x in data if x != '']
